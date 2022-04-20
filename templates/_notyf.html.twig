@@ -1,0 +1,15 @@
+{% for message in app.flashes('success') %}
+    <div id="notyf-message" class="success">{{ message }}</div>
+{% endfor %}
+
+{% for message in app.flashes('info') %}
+    <div id="notyf-message" class="info">{{ message }}</div>
+{% endfor %}
+
+{% for message in app.flashes('warning') %}
+    <div id="notyf-message" class="warning">{{ message }}</div>
+{% endfor %}
+
+{% for message in app.flashes('error') %}
+    <div id="notyf-message" class="error">{{ message }}</div>
+{% endfor %}
